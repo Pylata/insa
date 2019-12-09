@@ -25,7 +25,23 @@ class Poneys
      */
     public function removePoneyFromField(int $number): void
     {
-        $this->count -= $number;
+        if ($this->count < $number)  {
+          throw new Exception('Cannot have nega pony');
+        } else {
+          $this->count -= $number;
+        }
+    }
+
+    /**
+     * Ajoute un poney au champ
+     *
+     * @param int $number Nombre de poneys à ajouter
+     *
+     * @return void
+     */
+    public function addPoneyOnField(int $number): void
+    {
+        $this->count += $number;
     }
 
     /**
@@ -33,9 +49,30 @@ class Poneys
      *
      * @return array
      */
-    public function getNames(): array
+     public function getNames(): array
     {
 
     }
+
+    /**
+    * Vérifie qu'il reste de la place dans le champ
+    *
+    * @return boolval
+    */
+    public function isFree()
+    {
+      if($this->count >= 15){
+        return False;
+      }
+      else{
+        return True;
+      }
+    }
+
+    public function setCount(int $number): void
+    {
+      $this->count = $number;
+    }
+
 }
 ?>

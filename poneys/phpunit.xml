@@ -1,0 +1,13 @@
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+
+  <testsuites>
+  <testsuite name="PoneysTest">
+    <directory>tests/</directory>
+    <file>tests/PoneysTest.php</file>
+  </testsuite>
+</testsuites>
+
+
+
+</phpunit>
