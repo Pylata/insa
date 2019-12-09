@@ -48,7 +48,7 @@ class PoneysTest extends TestCase
         ];
     }
 
-    public function testAddPoneyFromField()
+    public functionExceptionTests testAddPoneyFromField()
     {
       // Setup
       $Poneys = new Poneys();
@@ -58,18 +58,6 @@ class PoneysTest extends TestCase
 
       // Assert
       $this->assertEquals(11, $Poneys->getCount());
-    }
-
-    public function testRemovePoneyFromFieldNegExc()
-    {
-        // Setup
-        $Poneys = new Poneys();
-
-        // Action
-        $Poneys->removePoneyFromField(10);
-
-        // Assert
-        $this->expectExceptionMessage("Cannot have nega pony");
     }
 
     public function testGetNamesPoney()

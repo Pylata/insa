@@ -8,6 +8,10 @@
   </testsuite>
 </testsuites>
 
-
+<testsuite name="ExceptionTests">
+  <directory>tests/</directory>
+  <file>tests/ExceptionTests.php</file>
+</testsuite>
+</testsuites>
 
 </phpunit>
